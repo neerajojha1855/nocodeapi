@@ -44,7 +44,7 @@ This project utilizes a unique **In-Memory Meta-Programming Architecture**:
    DB_PORT=db_port
    ```
 
-3. **Initialize the Control Plane**
+3. **Initialize the Control Panel**
    ```bash
    python manage.py makemigrations engine
    python manage.py migrate
