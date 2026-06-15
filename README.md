@@ -57,11 +57,21 @@ This project utilizes a unique **In-Memory Meta-Programming Architecture**:
 You can instantly generate a live API from your terminal using the custom management command:
 
 ```bash
+# Generating API for inventory management
 python manage.py generate_api "Create an API to track inventory items with quantity and price"
+
+# Employee Management
+python manage.py generate_api "Create an API to track employees with their first name, last name, email address, department, date joined, and a boolean for whether they are currently active"
+
+# Library Management
+python manage.py generate_api "I need an API to manage library books tracking the ISBN, book title, author, publication year, genre, and whether it is currently checked out"
+
+# Tech Blog Management
+python manage.py generate_api "Build an API for a tech blog. It should store the article title, author name, published date, a long text field for the content, and the number of views"
 ```
 
 ### 2. Test the Endpoint
 Once the AI returns a success message, open your browser and navigate to the generated slug:
-`http://127.0.0.1:8000/api/v1/dynamic/inventory-tracker/`
+`http://127.0.0.1:8000/api/v1/dynamic/<slug_name>/`
 
 You will see a fully interactive Django REST Framework interface where you can immediately begin sending `POST` and `GET` requests to your new dynamic table.
